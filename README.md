@@ -1,31 +1,40 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style> 
-div:hover {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {background-color: green;}
-    to {background-color: orange;}
-}
-/* Standard syntax */
-@keyframes example {
-    from {background-color: green;}
-    to {background-color: orange;}
-}
-</style>
+<title>CSS 3 Animation using transition</title>>
+<style type="text/css">
+        
+        body > div
+        {
+            
+            margin:10px 500px;
+            
+            width:100px;
+            height:100px;
+            
+            background:#108910;
+            color:#fff;
+            
+            text-align:center;
+            line-height:100px;
+            
+            transition:all 1.0s ease;
+            
+        }
+        
+        .circle:hover
+        {
+            background:#FF800A;
+        }
+        .circle:hover
+        {
+            border-radius:50%;
+        }
+    </style>
 </head>
 <body>
-
-<div>BOX</div>
-
+    
+    <div class="circle">Box</div>
+        
 </body>
 </html>
